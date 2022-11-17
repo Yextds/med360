@@ -26,7 +26,7 @@
       }
     },
     "SearchBar": {
-      "placeholderText": "Search",
+      "placeholderText": "Med-360",
        "submitIcon" : "magnifying_glass",
       "customIconUrl":"magnifying_glass", // The placeholder text in the answers search bar
       "allowEmptySearch": true,

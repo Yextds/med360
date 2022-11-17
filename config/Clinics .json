@@ -54,7 +54,7 @@
       "hideResultsHeader": true
     },
     "SearchBar": {
-      "placeholderText": "Search", // The placeholder text in the answers search bar
+      "placeholderText": "Clinics We Have", // The placeholder text in the answers search bar
       "allowEmptySearch": true, // Allows users to submit an empty search in the searchbar
       "loadingIndicator": {
         "display": true //Optional, whether to include a loading indicator on seachbar

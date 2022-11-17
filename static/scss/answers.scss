@@ -1,0 +1,132 @@
+.Answers
+{
+  // insert Answers scss here e.g.
+  //&-nav {
+  //  padding-top: 32px;
+  //}
+}
+
+.Overlay
+{
+  // Insert Overlay styling here
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,600;1,700&display=swap');
+
+body{font-family: 'Open Sans', sans-serif;}
+
+.Answers-nav .yxt-Nav-container .yxt-Nav-item{  font-family: 'Open Sans', sans-serif; font-weight: 500;}
+.Answers-navWrapper { padding-top: 40px;    border-bottom: 1px solid #ccc;}
+.Answers-nav .yxt-Nav-container .yxt-Nav-item.is-active {    border-bottom-color: #ec6608;    border-bottom-width: 4px;    color: #ec6608;    cursor: default;    pointer-events: none;}
+.yxt-Nav-item:hover{color: #ec6608; }
+.Answers-nav .yxt-Nav-container {  border-bottom: none;}
+/*.Answers-resultsWrapper { max-width: 100%; width: 100%!important;  background-color: #EBF8F9;}*/
+.site-logo { position: fixed;  top: 47px;  left: 60px;  z-index: 999;}
+.Answers-resultsHeader {    padding-left: 0;    border-bottom: 1px solid #ccc;    margin-bottom: 10px;}
+.HitchhikerResultsStandard-title, .HitchhikerResultsGridThreeColumns-title {  background: #ededed;    color: #ec6608;}
+.HitchhikerResultsGridThreeColumns-titleLabel {color: #ec6608;  font-weight:600;}
+.HitchhikerResultsGridThreeColumns-viewMore .HitchhikerResultsGridThreeColumns-viewMoreLink {    background-color: transparent;    color: #0c2136;    border-radius: 0;    width: 100%;    padding: 10px 20px;}
+.HitchhikerResultsGridThreeColumns-viewMore .HitchhikerResultsGridThreeColumns-viewMoreLink .HitchhikerResultsGridThreeColumns-viewMoreLabel {  color: #0c2136;   font-weight: 500;}
+.HitchhikerResultsGridThreeColumns-viewMore .HitchhikerResultsGridThreeColumns-viewMoreLink svg {    color: #0c2136;}
+
+.HitchhikerResultsGridThreeColumns--ways_to_stay .HitchhikerResultsGridThreeColumns-Card--universal{ border: none;}
+.HitchhikerResultsGridThreeColumns--awayresorts_offers .HitchhikerResultsGridThreeColumns-Card--universal{ border: none;}
+.HitchhikerResultsGridThreeColumns--holiday_homes .HitchhikerResultsGridThreeColumns-Card--universal{ border: none;}
+
+.doctor-sec .HitchhikerProductProminentImage-title{color:#3CC0C8;}
+.doctor-sec.AnswersVerticalGrid .Hitchhiker-3-columns .yxt-Card .yxt-Card-child { border: none;}
+.doctor-card-inner{ transition: color 0.25s; color: #5d5d5d; font-family: 'Open Sans', sans-serif;  position: relative; box-shadow: 1px 6px 8px #ededed;}
+.doctor-card-inner:hover::before, .doctor-card-inner:hover::after {  width: 100%;    height: 100%;}
+.yxt-Results--doctor_med .yxt-Card { margin-bottom: 30px;    margin-top: 60px;}
+.doctor-card-inner::before, .doctor-card-inner::after {    box-sizing: inherit;    content: '';    position: absolute;    width: 100%;    height: 100%;}
+.doctor-card-inner::before {  top: 0;  left: 0;}
+.doctor-card-inner::before, .doctor-card-inner::after { border: 2px solid transparent;  width: 0;  height: 0;}
+.doctor-card-inner::after {    bottom: 0;   right: 0;}
+.doctor-card-inner:hover::before {border-top-color: #ec6608; border-right-color: #ec6608; transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;}
+.doctor-card-inner:hover::after {border-bottom-color: #ec6608; border-left-color: #ec6608;transition: height 0.25s ease-out, width 0.25s ease-out 0.25s;}
+.doctor-card-inner:hover::after {    border-bottom-color: #ec6608;    border-left-color: #ec6608;    transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}
+ .doctor-card-inner .HitchhikerProductProminentImage-title{color:#3CC0C8;  font-weight: 600;}
+ .doctor-card-inner .HitchhikerProfessionalStandard-title {   color: #5d5d5d;  font-weight: 700;  text-transform: capitalize;  font-size: 1rem;}
+ .doctor-card-inner .HitchhikerProfessionalStandard-subtitle{font-size: 14px;}
+ .doctor-card-inner .HitchhikerProfessionalStandard-info{font-size: 14px;}
+ .doctor-card-inner .HitchhikerProfessionalStandard-ctasWrapper{margin-left:0px }
+ .doctor-card-inner .HitchhikerProductProminentImage-imgWrapper {    background-color: #f2f2f2;    width: 60%;    height: 0;    display: flex;    align-items: center;    justify-content: center;    border-radius: 100%;    margin: -50px auto 10px;    padding: 60% 0 0;   position: relative;   overflow: hidden;    box-shadow: 0 6px 15px #00000026;}
+ .doctor-card-inner .HitchhikerProductProminentImage-body {    text-align: left;    padding-left: 20px;    padding-right: 20px;   padding-bottom: 25px;}
+ .doctor-card-inner .HitchhikerProductProminentImage-imgWrapper img { position: absolute;    top: 0;  left: 0;    width: 100%;  height: 100%;  object-fit: cover;     background: #f5f5f5;  transition: all .4s;     z-index: 1;}
+ .doctor-card-inner .HitchhikerProductProminentImage-imgWrapper:hover img { transform: scale(1.1);}
+ .doctor-card-inner .HitchhikerProductProminentImage-cardDetails{font-weight: 500; }
+ .doctor-card-inner .HitchhikerProductProminentImage-cardDetails .HitchhikerProductProminentImage-detailsText{ color: #00737A;}
+ .doctor-card-inner .HitchhikerMenuItemStandard-ctasWrapper { justify-content: flex-start;}
+ .doctor-card-inner .HitchhikerMenuItemStandard-primaryCTA {  margin-left: 0;}
+ .doctor-card-inner a.HitchhikerCTA.js-HitchhikerCTA { z-index: 9; color: #fff;  font-weight:300;   background: #ec6608;  display: flex;  align-items: center;  text-transform: capitalize;    padding: 10px 25px;    line-height: 18px;    font-size: 14px;  border-radius: 3px 10px;}
+ .doctor-card-inner a.HitchhikerCTA.js-HitchhikerCTA:hover{ text-decoration: none; background: #c75607;}
+
+
+// clinc-card
+
+.clinc-card-inner{flex-direction: column; transition: color 0.25s; color: #5d5d5d; font-family: 'Open Sans', sans-serif;  position: relative; box-shadow: 1px 6px 8px #ededed;}
+.clinc-card-inner .HitchhikerDocumentStandard-imgWrapper{ width: 100%;}
+.clinc-card-inner .HitchhikerDocumentStandard-imgWrapper {background-color: #f2f2f2; width: 100%; height: 0; display: flex; align-items: center; justify-content: center; border-radius: 3px; margin: 0px auto 0px; padding: 57% 0 0; position: relative; overflow: hidden;  box-shadow: 0 6px 15px #00000026;}
+.clinc-card-inner .HitchhikerProductProminentImage-body {text-align: left;    padding-left: 20px;    padding-right: 20px;   padding-bottom: 25px;}
+.clinc-card-inner .HitchhikerDocumentStandard-imgWrapper img { position: absolute;    top: 0;  left: 0;    width: 100%;  height: 100%;  object-fit: cover;     background: #f5f5f5;  transition: all .4s;     z-index: 1;}
+.clinc-card-inner .HitchhikerDocumentStandard-imgWrapper:hover img { transform: scale(1.1);}
+.clinc-card-inner .HitchhikerDocumentStandard-title { margin-top: 20px;   color: #5d5d5d;  font-weight: 700;  text-transform: capitalize;  font-size: 1rem;}
+.clinc-card-inner .HitchhikerDocumentStandard-contentWrapper{font-size: 14px;}
+.clinc-card-inner .HitchhikerDocumentStandard-info{line-height: 24px;}
+
+
+.yxt-Results--faqs .yxt-Results-items .yxt-Card { border-top: 1px solid #d8d8d8!important;    margin-bottom:5px!important;    margin-top: 5px;}
+.yxt-Results--faqs .yxt-Results-items .yxt-Card {border-radius: 5px;}
+.HitchhikerFaqAccordion-toggle{ padding:10px 20px;}
+.HitchhikerFaqAccordion-toggle h3{ font-size: 14px;  font-family: 'Open Sans', sans-serif;   font-weight:700;  }
+.HitchhikerFaqAccordion-detailsText p{ color: #5d5d5d; font-size: 14px;  font-weight:700;  }
+.HitchhikerFaqAccordion-detailsText li{ font-weight:500;  }
+.HitchhikerFaqAccordion-details a{ font-weight:600;color: #ec6608;}
+.HitchhikerFaqAccordion{ background-color: transparent;}
+.HitchhikerFaqAccordion:hover, .HitchhikerFaqAccordion:focus{ background-color: transparent;}
+.HitchhikerFaqAccordion-title{color:#5d5d5d; }
+.HitchhikerFaqAccordion {border: 1px solid #fff;    border-radius: 5px;}
+.HitchhikerFaqAccordion.HitchhikerFaqAccordion--expanded {  border-color: #ec6608;    border-bottom-width: 5px;}
+.HitchhikerFaqAccordion-toggle svg{color: #5d5d5d;}
+
+
+
+
+.AnswersVerticalStandard .Answers-verticalResults .yxt-Results-items .yxt-Card { margin-bottom: 20px;  }
+.article-card.HitchhikerDocumentStandard { flex-direction: row;    position: relative;    box-shadow: none;}
+
+.article-card.HitchhikerProductProminentImage:before {    content: "";    position: absolute;    bottom: 0;    left: calc(25% + 25px);    width: calc(75% - 25px);    transition: all .4s;    height: 3px;    background-color: #ec6608;}
+.article-card .HitchhikerJobStandard-imgWrapper {    display: flex;    align-items: center;    width: 100%;    justify-content: center;    z-index: 1;    height: 140px;    text-align: center;    padding: 10px 0;    position: relative;    margin-right: 0;}
+.article-card .HitchhikerJobStandard-imgWrapper {    width: 25%;    padding: 0;    height: 100%;    overflow: hidden;}
+.article-card.HitchhikerDocumentStandard:before {     content: "";
+    position: absolute;
+    bottom: 0;
+    left: calc(25% + 25px);
+    width: calc(75% - 25px);
+    transition: all .4s;
+    height: 3px;
+    background-color: #f2f2f2;}
+.article-card.HitchhikerDocumentStandard:after {    content: "";    position: absolute;    bottom: 0;    left: calc(25% + 25px);    width: 84px;    transition: all .4s;    height: 3px;    background-color: #ec6608;}
+.article-card.HitchhikerDocumentStandard:hover:after {
+    width: calc(75% - 25px);
+}
+.article-card .HitchhikerJobStandard-imgWrapper img {    z-index: 1;    object-fit: cover;    width: 100%;    height: 140px;     background: #f5f5f5;}
+.article-card .HitchhikerJobStandard-imgWrapper img {    height: 100%;    transition: all .4s;}
+.article-card .HitchhikerDocumentStandard-body { width: 100%;   /*width: 75%;*/    text-align: left;    padding-left: 25px;     padding-bottom: 10px;    padding-top: 0;}
+.article-card .HitchhikerDocumentStandard-title{color: #2c2e3a;   line-height: 1.2;   font-weight: 700;    font-size:18px;}
+.article-card .HitchhikerDocumentStandard-subtitle {    color: #2c2e3a;    font-size: 14px;    font-weight: normal;    margin-top:10px;}
+.article-card .meta-info {    display: flex;    align-items: center;    margin-top: 10px;}
+.article-card .meta-info .author {    margin-left: 10px;    border-left: 1px solid #ccc;    padding-left: 10px;    line-height: 1;    font-weight: normal;}
+.article-card .meta-info .author strong {    font-weight: 300;}
+.bottom-bar {    display: flex;    margin-top: 10px;    flex-wrap: wrap;    flex-direction: column;}
+
+
+// all-sec
+
+.HitchhikerResultsGridThreeColumns--doctor_med .HitchhikerResultsGridThreeColumns-items {
+    padding-top: 80px;
+}
+
+
+
+

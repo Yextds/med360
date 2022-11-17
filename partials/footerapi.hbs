@@ -1,0 +1,91 @@
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
+</script>
+  <script>
+ fetch('https://liveapi-sandbox.yext.com/v2/accounts/me/entities?api_key=c60cbe94e016d1e3c9e6939885a56b0c&v=20181017&entityTypes=ce_med360footer&resolvePlaceholders=true').then(response => response.json()).then(result => {
+                if (!result.errors) {
+                if (result.response.count > 0) {
+                    var html1 = '';
+                    $.each(result.response.entities, function (index, entity) {
+                     var footerList1 = entity.c_med360.weAreMed360;
+                     footerList1.forEach(e => {
+                           console.log(e,"Console"); 
+                           html1 += '<li><a  href=' + e.link + ' > ' + e.label + '</a></li>';
+                      });
+                      $(".firstList").html(html1);
+                    });
+                    var html2 = '';
+                    $.each(result.response.entities, function (index, entity) {
+                     var footerList2 = entity.c_rangeOfServices.weAreMed360;
+                     footerList2.forEach(e => {
+                           //console.log(e,"Console"); 
+                           html2 += '<li><a  href=' + e.link + ' > ' + e.label + '</a></li>';
+                      });
+                      $(".secondList").html(html2);
+                    });
+                                        var html3 = '';
+                    $.each(result.response.entities, function (index, entity) {
+                     var footerList2 = entity.c_forDoctors.weAreMed360;
+                     footerList2.forEach(e => {
+                           //console.log(e,"Console"); 
+                           html3 += '<li><a  href=' + e.link + ' > ' + e.label + '</a></li>';
+                      });
+                      $(".thirdList").html(html3);
+                    });
+                    //c_support
+                    var html4 = '';
+                    $.each(result.response.entities, function (index, entity) {
+                     var footerList2 = entity.c_forClinics.weAreMed360;
+                     footerList2.forEach(e => {
+                           //console.log(e,"Console"); 
+                           html4 += '<li><a  href=' + e.link + ' > ' + e.label + '</a></li>';
+                      });
+                      $(".fourthList").html(html4);
+                    });
+                    var html4 = '';
+                    $.each(result.response.entities, function (index, entity) {
+                     var footerList2 = entity.c_forPatients.weAreMed360;
+                     footerList2.forEach(e => {
+                           //console.log(e,"Console"); 
+                           html4 += '<li><a  href=' + e.link + ' > ' + e.label + '</a></li>';
+                      });
+                      $(".fifthhList").html(html4);
+                    });
+                     var html5 = '';
+                    $.each(result.response.entities, function (index, entity) {
+                     var footerList2 = entity.c_career.weAreMed360;
+                     footerList2.forEach(e => {
+                           //console.log(e,"Console"); 
+                           html5 += '<li><a  href=' + e.link + ' > ' + e.label + '</a></li>';
+                      });
+                      $(".fifthhList").html(html5);
+                    });
+                     var html6 = '';
+                     $.each(result.response.entities, function (index, entity) {
+                     var footerList2 = entity.c_press.weAreMed360;
+                     footerList2.forEach(e => {
+                           //console.log(e,"Console"); 
+                           html6 += '<li><a  href=' + e.link + ' > ' + e.label + '</a></li>';
+                      });
+                      $(".sixthList").html(html6);
+                    });
+
+                    var html7 = '';
+                    $.each(result.response.entities, function (index, entity) {
+                     var footerList2 = entity.c_certificatemed360;
+                     footerList2.forEach(e => {
+                           //console.log(e.certifications.sourceUrl,"Console"); 
+                           html7 += '<li><img src='+e.thumbnails[0].url+'></img></li>';
+                      });
+                      $(".review-site-logo .logo-list").html(html7);
+                    });
+    
+               
+               }
+                else {
+                }
+           } else {
+            }
+        });
+
+
+ </script>

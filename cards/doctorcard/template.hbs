@@ -8,7 +8,7 @@
         {{> list }}
         {{> details }}
         
-        {{> phone }}
+        
       </div>
       {{> ctas }}
     </div>
@@ -114,13 +114,16 @@
 
 {{#*inline 'phone'}}
 {{#if card.phone}}
-<div class="HitchhikerProfessionalStandard-phone">
-  <div class="HitchhikerProfessionalStandard-phone--desktop">
-    {{card.phone}}
+<div class="HitchhikerLocationStandard-phone">
+  <div class="HitchhikerLocationStandard-phone--desktop" href="tel:{{{card.phoneurl}}}" > <svg xmlns="http://www.w3.org/2000/svg" width="9.15" height="14.641" viewBox="0 0 9.15 14.641">
+  <path id="Icon_awesome-mobile-alt" data-name="Icon awesome-mobile-alt" d="M7.778,0H1.373A1.373,1.373,0,0,0,0,1.373v11.9a1.373,1.373,0,0,0,1.373,1.373H7.778A1.373,1.373,0,0,0,9.15,13.268V1.373A1.373,1.373,0,0,0,7.778,0Zm-3.2,13.726a.915.915,0,1,1,.915-.915A.914.914,0,0,1,4.575,13.726Zm3.2-3.088a.344.344,0,0,1-.343.343H1.716a.344.344,0,0,1-.343-.343V1.716a.344.344,0,0,1,.343-.343H7.435a.344.344,0,0,1,.343.343Z" fill="#fff"/>
+</svg>
+    
+    <a href= {{{card.phoneurl}}}>{{card.phone}}</a>
   </div>
-  <a class="HitchhikerProfessionalStandard-phone--mobile" href="tel:{{card.phone}}"
+  <a class="HitchhikerLocationStandard-phone--mobile js-Hitchhiker-phone" href="tel:{{card.phoneurl}}"
     data-eventtype="TAP_TO_CALL"
-    data-eventoptions="{{json card.phoneEventOptions}}"
+    data-eventoptions='{{json card.phoneEventOptions}}'
     target={{#if card.target}}"{{card.target}}"{{else}}"_top"{{/if}}>
     {{card.phone}}
   </a>

@@ -25,8 +25,10 @@ class doctorcardCardComponent extends BaseCard['doctorcard'] {
       details: 'When:-' + profile.c_when, // The text in the body of the card
        listTitle: 'Position:-' + profile.c_position, // Heading of the bulleted list
        listItems: [], // Content of the bulleted list
-      phone: Formatter.nationalizedPhoneDisplay(profile, 'mainPhone'), // The phone number to display
-      phoneEventOptions: this.addDefaultEventOptions(), // The analytics event options for phone clicks
+      //phoneurl: Formatter.phoneLink(profile),
+      phone: Formatter.phoneLink(profile),
+      //phone: Formatter.nationalizedPhoneDisplay(profile), // The phone number for the card
+      phoneEventOptions: this.addDefaultEventOptions(), 
       image: Formatter.image(profile.primaryPhoto).url, // The URL of the image to display on the card
       altText: Formatter.image(profile.headshot).alternateText, // The alternate text for the image
 
@@ -49,9 +51,9 @@ class doctorcardCardComponent extends BaseCard['doctorcard'] {
       },
       // The secondary CTA of the card
       CTA2: {
-        label: profile.c_secondaryCTA ? profile.c_secondaryCTA.label : null,
-        iconName: 'chevron',
-        url: '/#',
+        label: Formatter.nationalizedPhoneDisplay(profile),
+        iconName: 'phone',
+        url: Formatter.phoneLink(profile),
         target: linkTarget,
         eventType: 'CTA_CLICK',
         eventOptions: this.addDefaultEventOptions(),

@@ -1,0 +1,26 @@
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous">
+</script>
+<script>
+  fetch('https://liveapi-sandbox.yext.com/v2/accounts/me/entities?api_key=c60cbe94e016d1e3c9e6939885a56b0c&v=20181017&entityTypes=ce_header&resolvePlaceholders=true').then(response => response.json()).then(result => {
+         if (!result.errors) {
+                if (result.response.count > 0) {
+                    var html1 = '';
+                    $.each(result.response.entities, function (index, entity) {
+                     var headerList1 = entity.c_navigation.header;
+                    
+                     headerList1.forEach(e => {
+                           console.log(e,"Console"); 
+                           html1 += '<li><a   href=' + e.link + '> ' + e.label + '</a></li>';
+                      });
+                      $(".list-1").html(html1);
+                    });
+                                     
+     
+             }
+                else {
+                }
+           } else {
+            }
+        });
+
+</script>

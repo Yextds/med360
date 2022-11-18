@@ -42,7 +42,7 @@ class doctorcardCardComponent extends BaseCard['doctorcard'] {
       // The primary CTA of the card
       CTA1: {
         label: profile.c_primaryCTA ? profile.c_primaryCTA.label : null, // The CTA's label
-        //iconName: 'chevron', // The icon to use for the CTA
+        iconName: 'chevron', // The icon to use for the CTA
         url: '/#', // The URL a user will be directed to when clicking
         target: linkTarget, // Where the new URL will be opened
         eventType: 'CTA_CLICK', // Type of Analytics event fired when clicking the CTA

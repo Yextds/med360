@@ -1,7 +1,7 @@
 {
   "verticalKey": "Clinics", // The vertical key from your search configuration
-  "pageTitle": "Search", // !!!REPLACE THIS VALUE!!! The contents of the title tag and meta open graph tag for title
-  // "metaDescription": "", // The meta tag for open graph description
+  "pageTitle": "med-360 Clinics", // !!!REPLACE THIS VALUE!!! The contents of the title tag and meta open graph tag for title
+   "metaDescription": "Search For Arciles, Doctors, Clinics, Frequently Asked Questions", // The meta tag for open graph description
   // "canonicalUrl": "", // The link tag for canonical URL as well as the meta tag for open graph url
   // "keywords": "", // The meta tag for keywords
   "pageSettings": {

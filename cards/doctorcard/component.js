@@ -30,7 +30,7 @@ class doctorcardCardComponent extends BaseCard['doctorcard'] {
       //phone: Formatter.nationalizedPhoneDisplay(profile), // The phone number for the card
       phoneEventOptions: this.addDefaultEventOptions(), 
       image: Formatter.image(profile.primaryPhoto).url, // The URL of the image to display on the card
-      altText: Formatter.image(profile.headshot).alternateText, // The alternate text for the image
+      altText: "doctors", // The alternate text for the image
 
       // If the card's details are longer than a certain character count, you can truncate the
       // text. A toggle will be supplied that can show or hide the truncated text.

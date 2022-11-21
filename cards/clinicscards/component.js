@@ -35,7 +35,7 @@ class clinicscardsCardComponent extends BaseCard['clinicscards'] {
       phoneEventOptions: this.addDefaultEventOptions(), 
       distance: Formatter.toLocalizedDistance(profile), // Distance from the user’s or inputted location
        details: profile.description, // The description for the card, displays below the address and phone
-      // altText: '', // The alt-text of the displayed image
+       altText: "Hospitals", // The alt-text of the displayed image
        image: profile.photoGallery ? profile.photoGallery[0].image.url : null, // The URL of the image to display on the card
       showOrdinal: true, // Show the map pin number on the card. Only supported for universal search
       CTA1: { // The primary call to action for the card

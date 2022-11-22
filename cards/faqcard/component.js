@@ -29,8 +29,8 @@ class faqcardCardComponent extends BaseCard['faqcard'] {
       isExpanded: false, // Whether the accordion is expanded on page load
       // The primary CTA of the card
       CTA1: {
-        label: profile.c_primaryCTA ? profile.c_primaryCTA.label : null, // The CTA's label
-        // iconName: '', // The icon to use for the CTA
+        label: "Read More", // The CTA's label
+        // iconame: '', // The icon to use for the CTA
         url: Formatter.generateCTAFieldTypeLink(profile.slug), // The URL a user will be directed to when clicking
         target: linkTarget, // Where the new URL will be opened. To open in a new tab use '_blank'
         eventType: 'CTA_CLICK', // Type of Analytics event fired when clicking the CTA
@@ -40,7 +40,7 @@ class faqcardCardComponent extends BaseCard['faqcard'] {
       },
       // The secondary CTA of the card
       CTA2: {
-        label: "View More",
+        label: "Read More",
         iconName: 'light_bulb',
         url: profile.slug,
         target: linkTarget,

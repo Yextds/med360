@@ -32,9 +32,12 @@
     <script>
       document.documentElement.lang = {{#if global_config.locale}}"{{global_config.locale}}"{{else}}'en'{{/if}};
     </script>
+     {{!-- {{#if pageTitle}}
+<title>{{pageTitle}}</title>
+{{/if}} --}}
 
-    {{#if metaDescription}}
-      <meta name="description" content="{{metaDescription}}">
+     {{#if pageTitle}}
+      <meta name="title" content="{{pageTitle}}">
     {{/if}}
     {{#if keywords}}
       <meta name="keywords" content="{{keywords}}">

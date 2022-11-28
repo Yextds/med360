@@ -49,8 +49,8 @@ class clinicscardsCardComponent extends BaseCard['clinicscards'] {
       CTA2: { // The secondary call to action for the card
         label: 'Get Directions',
         iconName: 'directions',
-        url: Formatter.getDirectionsUrl(profile),
-        target: linkTarget,
+        url: 'https://www.google.com/maps/dir/?api=1&destination='+(profile.address.line1),
+        target: '_blank',
         eventType: 'DRIVING_DIRECTIONS',
         eventOptions: this.addDefaultEventOptions(),
         // ariaLabel: '',
